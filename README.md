@@ -5,7 +5,7 @@
 
 ## Requirement
 - python 3.x
-- ffmpeg n4.4-19-g8d172d9409
+- ffmpeg 2022-03-17-git-242c07982a-full_build-www.gyan.dev
 
 ## Installation
 
@@ -25,3 +25,9 @@ python script.py
 
 ## Refrenrace
 - [FFmpegでの音声ファイルと静止画1枚からの動画の作成方法](https://dev.classmethod.jp/articles/ffmpeg-create-movie-by-audio/)
+
+## 更新履歴
+- 2022/3/19
+    - script.batの作成
+    - 動画背景画像更新（1920x1080）
+    - ffmpegコマンドの更新

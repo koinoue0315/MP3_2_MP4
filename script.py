@@ -27,7 +27,7 @@ for audio_file in audio_files:
     out_file_path = os.path.join(output_file_dir, out_file_name)
     print(album, title)
 
-    command = f'ffmpeg -loop 1 -r 30000/1001 -i "{background_img}" -i "{audio_file_path}" -acodec aac -strict experimental -ab 320k -ac 2 -ar 48000 -pix_fmt yuv420p -shortest "{out_file_path}"'
+    command = f'ffmpeg -loop 1 -r 30000/1001 -i "{background_img}" -i "{audio_file_path}" -acodec aac -strict experimental -ab 320k -ac 2 -ar 48000 -c:v libx264 -pix_fmt yuv420p -shortest "{out_file_path}"'
     print(command)
     subprocess.run(command)
 
